@@ -1,0 +1,198 @@
+
+/* big tablets to 1200px (widths small that the 1140px row) */
+@media only screen and (max-width: 1200px) {
+
+    .hero-text-box {
+        width: 100%;    
+        padding: 0 2%;
+    }
+
+    .row {padding: 0 2%;}
+
+    .steps-box:last-child {padding-left: 0;}
+
+}
+
+/*  */
+@media only screen and (max-width: 1024px){
+    
+    /*  SETUP BASIC  ========================================*/
+    .box body{font-size: 18px; text-align: start;}
+    
+    section{padding: 60px 0}
+
+
+    /*  HOW IT WORKS  ========================================*/
+
+    .app-screen { width: 50%; }
+
+    .works-step div {line-height: 145%;}
+
+
+    /*  FORM  ===============================================*/
+    .contact-form{
+        width: 80%;
+    }
+}
+
+
+/*  Small phone and Small tablets*/
+@media only screen and (max-width: 868px){
+
+    /*  SETUP BASIC  ========================================*/
+    body {font-size: 16px;}
+
+    /*  NAV STICKY ==========================================*/
+    .navbar .menu-list {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        max-width: 400px;
+        background: #222222fa;
+        padding: 40px 0;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    .navbar .menu-list.active{left: 0%;}
+
+    .menu-list li{
+        margin-top: 45px;
+        transition: transform 0.2s, color 0.2s;
+    }
+
+    .menu-list li a{
+        font-size: 23px;
+        margin: 0;
+    }
+
+    .social-icons-nav {
+        display: inline-flex;
+        list-style: none;
+        margin-top: 25%;
+    }
+
+    .social-icons-nav li a{
+        margin: 0;
+        padding: 10px;
+    }
+
+    .icon {
+        color: #fff;
+        font-size: 25px;
+        cursor: pointer;
+        padding: 10px 0;
+        display: block;
+    }
+
+    .icon.hide {display: none;}
+    
+    .icon.cancel-btn {
+       position: absolute;
+       right: 30px;
+       top: 20px;
+    }
+    
+    body.disabledScroll{overflow: hidden;}
+
+    .contact-form {width: 75%;}
+
+
+}
+
+/* small phones: from 0 to 768px */
+@media only screen and (max-width: 768px) {
+    body {font-size: 16px;}
+    
+    section{ padding: 30px 0;}
+
+    .col { width: 50%; margin: 0;}
+
+    .box { padding: 2%;}
+
+    h1{ font-size: 180%;}
+    h2{ font-size: 150%;}
+
+    /*  HOW IT WORKS  ========================================*/
+    .steps-box:first-child { width: 50%;}
+    .app-screen {width: 60%;}
+    .steps-box:last-child { padding-left: 1%;}
+    .btn-app img{ height: 48px; margin: 0; margin-left: 2px;}
+
+    /*  CITIES  ==============================================*/
+    .culo{ padding: 3%;}
+
+    /* PLANS  ===============================================*/
+    .plan-box { width: 100%; margin: 0;}
+
+    .section-plans .culo:last-of-type {margin-left: 25%;}
+
+    /*  FORM  ================================================*/
+    .contact-form .row { margin: 1.5%}
+}
+
+@media only screen and (max-width: 650px) {
+    
+    .col { width: 100%}
+
+    .row {padding: 0 4%;}
+
+    .long-copy {
+        width: 95%;
+        margin: 0 auto 30px;
+    }
+
+    /* NAV STICKY ============================================*/
+    .content { padding: 0 4%;}
+
+    /*  PICTURE MEALS ========================================*/
+
+    .picture-meal li {height: 15vh;}
+    .photo-meal {height: 100%;}
+    .photo-meal img {height: 100%}
+
+    /*  HOW IT WORKS =========================================*/
+
+    .steps-box:first-child { 
+        width: 60%; 
+        margin: 10px 20%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .steps-box:last-child {margin-top: 50px;}
+    .works-step {margin-bottom: 35px;}
+    .works-step:last-of-type {margin-bottom: 55px;}
+    .btn-app img {margin: 2%;}
+
+    /* PLANS  ================================================*/
+
+    .section-plans .culo:last-of-type {margin-left: 0;}
+
+    .culo {padding: 3% 10%;}
+
+    /* CITE ==================================================*/
+
+    blockquote { margin-bottom: 25px;}
+
+    cite img{ width: 60px; height: 60px;}
+
+    /*  FORM  ================================================*/
+    
+    .contact-form {width: 100%;}
+
+    .contact-form div {margin: 2%;}
+
+    /* FOOTER ================================================*/
+
+    .footer-nav,
+    .social-icons-footer {float: none;}
+    .footer-nav li,
+    .social-icons-footer li {margin: 5px;}
+    footer .col {text-align: center;}
+    .footer-nav {margin-bottom: 20px;}
+    
+}
